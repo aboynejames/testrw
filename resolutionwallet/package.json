@@ -1,0 +1,27 @@
+{
+  "name": "resolutionwallet",
+  "description": "living knowledge network resolution wallet",
+  "version": "0.1.1",
+  "author": "James Littlejohn <james@aboynejames.co.uk> (https://twitter.com/aboynejames)",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "electron-rebuild"
+  },
+  "devDependencies": {
+    "electron": "^1.4.12",
+    "electron-rebuild": "^1.4.0"
+  },
+  "dependencies": {
+    "pouchdb": "^6.1.0",
+    "pouchdb-adapter-node-websql": "^6.1.0",
+    "socket.io": "1.7.3",
+    "external-ip": "^0.2.4",
+    "kad": "^1.6.1",
+    "kad-traverse": "0.0.4"
+  },
+  "build": {
+    "appId": "com.example.electron-res",
+    "category": "elres.app.category.type"
+  }
+}
