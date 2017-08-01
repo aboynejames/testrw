@@ -55,7 +55,7 @@ KAD.prototype.getpublicIP = function() {
     }
 console.log('extippp' + ip);
     localthis.ipPublic = ip;
-    localthis.startDHT(8816)
+    localthis.startDHT(8817)
   });
 
 };
@@ -74,7 +74,7 @@ KAD.prototype.startDHT = function(portIn) {
   // Create your contact
   var contact = kad.contacts.AddressPortContact({
     address: ipaddress,
-    port: 8816//portnumber
+    port: 8817//portnumber
   });
   // Decorate your transport
   var NatTransport = traverse.TransportDecorator(kad.transports.UDP);
@@ -116,7 +116,7 @@ this.dht = new kad.Node({
   {
     var seedData = {};
   	seedData.ip = '52.4.43.80';//'188.166.138.93';//'52.4.43.80';//'127.0.0.1';  // need list of peers
-  	seedData.port = 3333;
+  	seedData.port = 8817;
   	var messagePtoP = {};
   	messagePtoP.type = 'join';
   	messagePtoP.text = 'Welcome to LKN Network';
@@ -197,7 +197,7 @@ KAD.prototype.seedSingle = function(seedIn) {
 
   var seed = {
     address: seedIn.ip,
-    port: 8816
+    port: 8817
   };
 console.log(seed);
   var localthis = this;

@@ -5,8 +5,8 @@
 $(document).ready(function(){
 
 	liveSettings = {};
-	liveSettings.cloudIP = "http://localhost:8822";
-	liveSettings.localIP = "http://localhost:8822";
+	liveSettings.cloudIP = "http://localhost:8811";
+	liveSettings.localIP = "http://localhost:8811";
 	liveSettings.localURL = "http://localhost/aboynejames/test/dsensor/electronwallet/resolutionwallet/src/index.html";
 	liveSettings.DmapURL = "http://localhost/aboynejames/test/dsensor/dapp/";
 	// connect to socket.io

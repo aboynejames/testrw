@@ -28,7 +28,7 @@ function start(route, handle) {
   PeertoPeer = new peertopeer();
 
 
-	var app = http.createServer(onRequest).listen(8822);
+	var app = http.createServer(onRequest).listen(8811);
 console.log('server up');
 
 	function onRequest(request, response) {
@@ -58,7 +58,7 @@ console.log('server up');
 
 			if(dataIN == "start")
 			{
-				PeertoPeer.startDHTkad(8816);
+				PeertoPeer.startDHTkad(8817);
 				socket.emit('dhtlive', "DHT started");
 
 			}
